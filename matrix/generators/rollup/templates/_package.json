@@ -1,0 +1,35 @@
+{
+  "name": "<%= scope %>/<%= pkgName %>",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.umd.js",
+  "exportName": "TestLib",
+  "files": [
+    "lib",
+    "types"
+  ],
+  "scripts": {
+    "dev": "rollup -w -c rollup.config.dev.js",
+    "build": "rollup -c rollup.config.prod.js"
+  },
+  "repository": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@rollup/plugin-babel": "^5.0.4",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "autoprefixer": "^9.8.4",
+    "rollup-plugin-livereload": "^1.3.0",
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-terser": "^6.1.0"
+  },
+  "dependencies": {},
+  "author": "",
+  "license": "ISC"
+}

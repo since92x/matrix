@@ -1,0 +1,38 @@
+{
+  "version": "independent",
+  "publishConfig": {
+    "access": "public"
+  },
+  "packages": [
+    "matrix/**/",
+    "packages/**/"
+  ],
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    },
+    "publish": {
+      "allowBranch": "master",
+      "ignoreChanges": [
+        "ignored-file",
+        "matrix/**",
+        "**/examples/**",
+        "*.md",
+        "*.lock"
+      ],
+      "registry": "https://registry.npmjs.org",
+      "conventionalCommits": true,
+      "message": "chore(release): publish %s"
+    }
+  },
+  "ignoreChanges": [
+    "matrix/**",
+    "**/examples/**",
+    "**/__test__/**",
+    "*.test.js",
+    "**/lib/**",
+    "readme.md",
+    ".eslint*",
+    "CHANGELOG.md"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@matrix/cli",
+  "version": "0.1.2",
+  "description": "template creator",
+  "bin": {
+    "matrix-create": "bin/create.js",
+    "matrix-serve": "bin/serve.js",
+    "matrix-canary": "bin/canary.js",
+    "matrix-build": "bin/build.js",
+    "matrix-check": "bin/helper.js"
+  }
+}
