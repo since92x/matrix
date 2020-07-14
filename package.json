@@ -22,8 +22,6 @@
   },
   "dependencies": {
     "@matrix/cli": "file:matrix/cli",
-    "@matrix/foo": "file:packages/foo",
-    "@matrix/gooooo": "file:packages/gooooo",
     "@matrix/template-rollup": "file:matrix/generators/rollup",
     "@matrix/template-webpack": "file:matrix/generators/webpack"
   },
